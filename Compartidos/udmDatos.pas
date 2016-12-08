@@ -3,14 +3,14 @@ unit udmDatos;
 interface
 
 uses
-  System.SysUtils, System.Classes, Data.DB, Datasnap.DBClient,
+  System.SysUtils, System.Classes, Data.DB, Datasnap.DBClient, rpclientdataset,
   ZAbstractRODataset, ZAbstractDataset, ZDataset, Datasnap.Provider;
 
 type
   TdmDatos = class(TDataModule)
     dsDatos: TDataSource;
     dspDatos: TDataSetProvider;
-    cdsDatos: TClientDataSet;
+    cdsDatos: TrpClientDataSet;
     qryDatos: TZQuery;
     procedure cdsNewRecord(DataSet: TDataSet);
     procedure cdsAfterPost(DataSet: TDataSet);

@@ -1,146 +1,496 @@
-object frmCatalogo: TfrmCatalogo
-  Left = 0
-  Top = 0
-  Caption = 'frmCatalogo'
-  ClientHeight = 430
-  ClientWidth = 529
-  Color = clBtnFace
-  Font.Charset = DEFAULT_CHARSET
-  Font.Color = clWindowText
-  Font.Height = -11
-  Font.Name = 'Tahoma'
-  Font.Style = []
-  OldCreateOrder = True
-  OnCreate = FormCreate
-  OnDestroy = FormDestroy
+inherited frmPROVEEDORES: TfrmPROVEEDORES
+  Caption = 'PROVEEDORES'
+  ClientWidth = 681
+  ExplicitWidth = 697
   PixelsPerInch = 96
   TextHeight = 13
-  object tbCatalogo: TToolBar
-    Left = 0
-    Top = 0
-    Width = 529
-    Height = 49
-    ButtonHeight = 47
-    ButtonWidth = 54
-    Caption = 'tbCatalogo'
-    DisabledImages = imgImagenesGris
-    Images = imgImagenes
-    TabOrder = 0
-    object brnNuevo: TToolButton
-      Left = 0
-      Top = 0
-      Action = actNuevo
-    end
-    object btnGuardar: TToolButton
-      Left = 54
-      Top = 0
-      Action = actGuardar
-    end
-    object btnModificar: TToolButton
-      Left = 108
-      Top = 0
-      Action = actModificar
-    end
-    object btnEliminar: TToolButton
-      Left = 162
-      Top = 0
-      Action = actEliminar
-      ParentShowHint = False
-      ShowHint = False
-    end
-    object btnCancelar: TToolButton
-      Left = 216
-      Top = 0
-      Action = actCancelar
-    end
+  inherited tbCatalogo: TToolBar
+    Width = 681
+    ExplicitWidth = 681
   end
-  object pgcCatalogo: TPageControl
-    Left = 0
-    Top = 49
-    Width = 529
-    Height = 381
-    ActivePage = tsListado
-    Align = alClient
-    TabOrder = 1
-    object tsListado: TTabSheet
-      Caption = 'Listado'
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
-      object grdCatalogo: TDBGrid
-        Left = 0
-        Top = 0
-        Width = 521
-        Height = 353
-        Align = alClient
-        Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgTitleClick, dgTitleHotTrack]
-        TabOrder = 0
-        TitleFont.Charset = DEFAULT_CHARSET
-        TitleFont.Color = clWindowText
-        TitleFont.Height = -11
-        TitleFont.Name = 'Tahoma'
-        TitleFont.Style = []
-        OnDblClick = grdCatalogoDblClick
+  inherited pgcCatalogo: TPageControl
+    Width = 681
+    ActivePage = tsEditor
+    ExplicitWidth = 681
+    inherited tsListado: TTabSheet
+      ExplicitLeft = 4
+      ExplicitTop = 24
+      ExplicitWidth = 673
+      ExplicitHeight = 353
+      inherited grdCatalogo: TDBGrid
+        Width = 673
+        DataSource = dmPROVEEDORES.dsDatos
+        Columns = <
+          item
+            Expanded = False
+            FieldName = 'NOMBRE_COMERCIAL'
+            Title.Caption = 'Nombre Comercial'
+            Visible = True
+          end
+          item
+            Expanded = False
+            FieldName = 'NOMBRE'
+            Title.Caption = 'Nombre'
+            Visible = True
+          end
+          item
+            Expanded = False
+            FieldName = 'DIRECCION'
+            Title.Caption = 'Direcci'#243'n'
+            Visible = True
+          end
+          item
+            Expanded = False
+            FieldName = 'CODIGO_POSTAL'
+            Title.Caption = 'C'#243'digo postal'
+            Visible = True
+          end
+          item
+            Expanded = False
+            FieldName = 'CIUDAD'
+            Title.Caption = 'Ciudad'
+            Visible = True
+          end
+          item
+            Expanded = False
+            FieldName = 'PROVINCIA'
+            Title.Caption = 'Provincia'
+            Visible = True
+          end
+          item
+            Expanded = False
+            FieldName = 'NIF'
+            Title.Caption = 'Nif'
+            Visible = True
+          end
+          item
+            Expanded = False
+            FieldName = 'TELEFONO'
+            Title.Caption = 'Tel'#233'fono'
+            Visible = True
+          end
+          item
+            Expanded = False
+            FieldName = 'MOVIL'
+            Title.Caption = 'Movil'
+            Visible = True
+          end
+          item
+            Expanded = False
+            FieldName = 'FAX'
+            Title.Caption = 'Fax'
+            Visible = True
+          end
+          item
+            Expanded = False
+            FieldName = 'EMAIL'
+            Title.Caption = 'Email'
+            Visible = True
+          end
+          item
+            Expanded = False
+            FieldName = 'WEB'
+            Title.Caption = 'Web'
+            Visible = True
+          end
+          item
+            Expanded = False
+            FieldName = 'NUMERO_CUENTA'
+            Title.Caption = 'Numero cuenta'
+            Visible = True
+          end
+          item
+            Expanded = False
+            FieldName = 'OBSERVACIONES'
+            Title.Caption = 'Observaciones'
+            Visible = True
+          end
+          item
+            Expanded = False
+            FieldName = 'IRPF'
+            Title.Caption = 'Irpf'
+            Visible = True
+          end
+          item
+            Expanded = False
+            FieldName = 'SIN_IVA'
+            Title.Caption = 'Sin iva'
+            Visible = True
+          end
+          item
+            Expanded = False
+            FieldName = 'CON_IRPF'
+            Title.Caption = 'con irf'
+            Visible = True
+          end
+          item
+            Expanded = False
+            FieldName = 'CONTACTO'
+            Title.Caption = 'Contacto'
+            Visible = True
+          end
+          item
+            Expanded = False
+            FieldName = 'ID_FORMAS_PAGO'
+            Title.Caption = 'Formas pago'
+            Visible = True
+          end
+          item
+            Expanded = False
+            FieldName = 'ENTIDAD'
+            Title.Caption = 'Entidad'
+            Visible = True
+          end
+          item
+            Expanded = False
+            FieldName = 'PAIS'
+            Title.Caption = 'Pais'
+            Visible = True
+          end
+          item
+            Expanded = False
+            FieldName = 'DIA_PAGO'
+            Title.Caption = 'Dia de pago'
+            Visible = True
+          end
+          item
+            Expanded = False
+            FieldName = 'BIC'
+            Title.Caption = 'Bic'
+            Visible = True
+          end
+          item
+            Expanded = False
+            FieldName = 'ID_USUARIO'
+            Title.Caption = 'Codigo usuario'
+            Visible = True
+          end>
       end
     end
-    object tsEditor: TTabSheet
-      Caption = 'Datos Generales'
-      ImageIndex = 1
+    inherited tsEditor: TTabSheet
+      ExplicitLeft = 4
+      ExplicitTop = 24
+      ExplicitWidth = 673
+      ExplicitHeight = 353
+      object sda: TLabel
+        Left = 3
+        Top = 194
+        Width = 90
+        Height = 13
+        Caption = 'Numero de Cuenta'
+      end
+      object lblcontacto: TLabel
+        Left = 349
+        Top = 79
+        Width = 44
+        Height = 13
+        Caption = 'Contacto'
+      end
+      object lblbic: TLabel
+        Left = 353
+        Top = 216
+        Width = 39
+        Height = 13
+        Caption = 'Iban/Bic'
+      end
+      object lblLBLF: TLabel
+        Left = 333
+        Top = 190
+        Width = 67
+        Height = 13
+        Caption = 'F de pago/Dia'
+      end
+      object lblentidad: TLabel
+        Left = 163
+        Top = 151
+        Width = 36
+        Height = 13
+        Caption = 'Entidad'
+      end
+      object lblpais: TLabel
+        Left = 7
+        Top = 127
+        Width = 19
+        Height = 13
+        Caption = 'Pa'#237's'
+      end
+      object lblemail: TLabel
+        Left = 358
+        Top = 60
+        Width = 24
+        Height = 13
+        Caption = 'Email'
+      end
+      object lblfax: TLabel
+        Left = 358
+        Top = 41
+        Width = 18
+        Height = 13
+        Caption = 'Fax'
+      end
+      object lblmovil: TLabel
+        Left = 358
+        Top = 22
+        Width = 24
+        Height = 13
+        Caption = 'M'#243'vil'
+      end
+      object lbltel: TLabel
+        Left = 358
+        Top = 3
+        Width = 42
+        Height = 13
+        Caption = 'Tel'#233'fono'
+      end
+      object lblnif: TLabel
+        Left = 3
+        Top = 154
+        Width = 24
+        Height = 13
+        Caption = 'NINF'
+      end
+      object lblciudad: TLabel
+        Left = 163
+        Top = 127
+        Width = 33
+        Height = 13
+        Caption = 'Ciudad'
+      end
+      object lblCp: TLabel
+        Left = 2
+        Top = 100
+        Width = 17
+        Height = 13
+        Caption = 'Cp:'
+      end
+      object lblDirecion: TLabel
+        Left = 3
+        Top = 76
+        Width = 43
+        Height = 13
+        Caption = 'Direcci'#243'n'
+      end
+      object lblnombre: TLabel
+        Left = 3
+        Top = 57
+        Width = 37
+        Height = 13
+        Caption = 'Nombre'
+      end
+      object lblproveedor: TLabel
+        Left = 3
+        Top = 3
+        Width = 31
+        Height = 13
+        Caption = 'c'#243'digo'
+      end
+      object lbl1: TLabel
+        Left = 2
+        Top = 38
+        Width = 61
+        Height = 13
+        Caption = 'Nombre Co.:'
+      end
+      object edtNombreC: TDBEdit
+        Left = 132
+        Top = 27
+        Width = 169
+        Height = 21
+        DataField = 'NOMBRE_COMERCIAL'
+        DataSource = dmPROVEEDORES.dsDatos
+        TabOrder = 0
+      end
+      object edtDirecion: TDBEdit
+        Left = 132
+        Top = 70
+        Width = 169
+        Height = 21
+        DataField = 'DIRECCION'
+        DataSource = dmPROVEEDORES.dsDatos
+        TabOrder = 1
+      end
+      object edtCp: TDBEdit
+        Left = 132
+        Top = 97
+        Width = 169
+        Height = 21
+        DataField = 'CODIGO_POSTAL'
+        DataSource = dmPROVEEDORES.dsDatos
+        TabOrder = 2
+      end
+      object edtpais: TDBEdit
+        Left = 36
+        Top = 124
+        Width = 121
+        Height = 21
+        DataField = 'PAIS'
+        DataSource = dmPROVEEDORES.dsDatos
+        TabOrder = 3
+      end
+      object edtninf: TDBEdit
+        Left = 36
+        Top = 151
+        Width = 121
+        Height = 21
+        DataField = 'NIF'
+        DataSource = dmPROVEEDORES.dsDatos
+        TabOrder = 4
+      end
+      object edtTel: TDBEdit
+        Left = 436
+        Top = -1
+        Width = 121
+        Height = 21
+        DataField = 'TELEFONO'
+        DataSource = dmPROVEEDORES.dsDatos
+        TabOrder = 5
+      end
+      object edtmovil: TDBEdit
+        Left = 436
+        Top = 16
+        Width = 121
+        Height = 21
+        DataField = 'MOVIL'
+        DataSource = dmPROVEEDORES.dsDatos
+        TabOrder = 6
+      end
+      object edtfax: TDBEdit
+        Left = 436
+        Top = 35
+        Width = 121
+        Height = 21
+        DataField = 'FAX'
+        DataSource = dmPROVEEDORES.dsDatos
+        TabOrder = 7
+      end
+      object edtemail: TDBEdit
+        Left = 436
+        Top = 54
+        Width = 121
+        Height = 21
+        DataField = 'EMAIL'
+        DataSource = dmPROVEEDORES.dsDatos
+        TabOrder = 8
+      end
+      object edtcon: TDBEdit
+        Left = 436
+        Top = 73
+        Width = 121
+        Height = 21
+        DataField = 'CONTACTO'
+        DataSource = dmPROVEEDORES.dsDatos
+        TabOrder = 9
+      end
+      object edtNombre: TDBEdit
+        Left = 132
+        Top = 54
+        Width = 169
+        Height = 21
+        DataField = 'NOMBRE'
+        DataSource = dmPROVEEDORES.dsDatos
+        TabOrder = 10
+      end
+      object edtciudad: TDBEdit
+        Left = 213
+        Top = 124
+        Width = 121
+        Height = 21
+        DataField = 'CIUDAD'
+        DataSource = dmPROVEEDORES.dsDatos
+        TabOrder = 11
+      end
+      object cbbDire: TDBComboBox
+        Left = 213
+        Top = 148
+        Width = 117
+        Height = 21
+        DataField = 'ENTIDAD'
+        DataSource = dmPROVEEDORES.dsDatos
+        TabOrder = 12
+      end
+      object chkiva: TDBCheckBox
+        Left = 4
+        Top = 213
+        Width = 97
+        Height = 17
+        Caption = 'Factura sin IVA'
+        DataField = 'SIN_IVA'
+        DataSource = dmPROVEEDORES.dsDatos
+        TabOrder = 13
+      end
+      object chkIRPF: TDBCheckBox
+        Left = 4
+        Top = 236
+        Width = 97
+        Height = 17
+        Caption = 'APLICAR IRF'
+        DataField = 'IRPF'
+        DataSource = dmPROVEEDORES.dsDatos
+        TabOrder = 14
+      end
+      object DBEdit1: TDBEdit
+        Left = 107
+        Top = 236
+        Width = 34
+        Height = 21
+        DataField = 'CON_IRPF'
+        DataSource = dmPROVEEDORES.dsDatos
+        TabOrder = 15
+      end
+      object cbbpago: TDBComboBox
+        Left = 452
+        Top = 187
+        Width = 81
+        Height = 21
+        DataField = 'ID_FORMAS_PAGO'
+        DataSource = dmPROVEEDORES.dsDatos
+        TabOrder = 16
+      end
+      object edtbic: TDBEdit
+        Left = 452
+        Top = 214
+        Width = 121
+        Height = 21
+        DataField = 'BIC'
+        DataSource = dmPROVEEDORES.dsDatos
+        TabOrder = 17
+      end
+    end
+    object DATOSADICIONALES: TTabSheet
+      Caption = 'DATOSADICIONALES'
+      ImageIndex = 2
       ExplicitLeft = 0
       ExplicitTop = 0
       ExplicitWidth = 0
       ExplicitHeight = 0
+      object lblObservaciones: TLabel
+        Left = 3
+        Top = 3
+        Width = 84
+        Height = 13
+        Caption = 'OBSERVACIONES'
+        FocusControl = mmoObservaciones
+      end
+      object mmoObservaciones: TDBMemo
+        Left = 0
+        Top = 22
+        Width = 409
+        Height = 211
+        DataField = 'OBSERVACIONES'
+        DataSource = dmPROVEEDORES.dsDatos
+        TabOrder = 0
+      end
     end
   end
-  object actCatalogo: TActionList
-    Images = imgImagenes
-    Left = 232
-    Top = 240
-    object actGuardar: TDataSetPost
-      Category = 'Dataset'
-      Caption = 'Guardar'
-      Hint = 'Post'
-      ImageIndex = 3
-    end
-    object actNuevo: TDataSetInsert
-      Category = 'Dataset'
-      Caption = 'Nuevo'
-      Hint = 'Nuevo'
-      ImageIndex = 0
-    end
-    object actModificar: TDataSetEdit
-      Category = 'Dataset'
-      Caption = 'Modificar'
-      Hint = 'Modificar'
-      ImageIndex = 1
-    end
-    object actEliminar: TDataSetDelete
-      Category = 'Dataset'
-      Caption = 'Eliminar'
-      Hint = 'Eliminar'
-      ImageIndex = 2
-    end
-    object actCancelar: TDataSetCancel
-      Category = 'Dataset'
-      Caption = 'Cancelar'
-      Hint = 'Cancel'
-      ImageIndex = 4
-    end
-    object actInforme: TAction
-      Caption = 'Informe'
-      OnExecute = actInformeExecute
-    end
+  inherited actCatalogo: TActionList
+    Left = 152
+    Top = 344
   end
-  object imgImagenes: TImageList
-    ColorDepth = cd32Bit
-    DrawingStyle = dsTransparent
-    Height = 32
-    Width = 32
-    Left = 232
-    Top = 144
+  inherited imgImagenes: TImageList
+    Left = 8
+    Top = 344
     Bitmap = {
-      494C010105000800100120002000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
+      494C010105000800300120002000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000800000004000000001002000000000000080
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000060606074343
@@ -1203,15 +1553,11 @@ object frmCatalogo: TfrmCatalogo
       FFC003FFFFFFFFFFFFFFFFFF00FF833F00000000000000000000000000000000
       000000000000}
   end
-  object imgImagenesGris: TImageList
-    ColorDepth = cd32Bit
-    DrawingStyle = dsTransparent
-    Height = 32
-    Width = 32
-    Left = 232
-    Top = 192
+  inherited imgImagenesGris: TImageList
+    Left = 56
+    Top = 344
     Bitmap = {
-      494C0101050008002C0120002000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
+      494C0101050008004C0120002000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000800000004000000001002000000000000080
       0000000000000000000000000000000000000000000000000000000000000000
       00000000000000000000000000000000000001010101020202037C7C7C889090

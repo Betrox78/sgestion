@@ -1,5 +1,5 @@
 object dmBase: TdmBase
-  OldCreateOrder = False
+  OldCreateOrder = True
   OnCreate = DataModuleCreate
   OnDestroy = DataModuleDestroy
   Height = 446
@@ -9,10 +9,10 @@ object dmBase: TdmBase
     Catalog = ''
     HostName = ''
     Port = 0
-    Database = ''
-    User = ''
-    Password = ''
-    Protocol = ''
+    Database = 'C:\AppData\SGESTION.FDB'
+    User = 'SYSDBA'
+    Password = 'masterkey'
+    Protocol = 'firebirdd-3.0'
     Left = 24
     Top = 8
   end
