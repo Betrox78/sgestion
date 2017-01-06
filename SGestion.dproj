@@ -70,6 +70,8 @@
         <DCC_RemoteDebug>true</DCC_RemoteDebug>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_1_Win32)'!=''">
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <VerInfo_Locale>1033</VerInfo_Locale>
         <AppEnableHighDPI>true</AppEnableHighDPI>
         <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
         <DCC_RemoteDebug>false</DCC_RemoteDebug>
@@ -124,14 +126,176 @@
             <Form>frmPROVEEDORES</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="OperacionDatos\udmPRODUCTOS.pas">
-            <Form>dmPRODUCTOS</Form>
+        <DCCReference Include="OperacionDatos\udmTPV.pas">
+            <Form>dmTPV</Form>
             <FormType>dfm</FormType>
             <DesignClass>TDataModule</DesignClass>
         </DCCReference>
-        <DCCReference Include="Operacion\ufrmPRODUCTOS.pas">
-            <Form>frmPRODUCTOS</Form>
+        <DCCReference Include="Operacion\ufrmTPV.pas">
+            <Form>frmTPV</Form>
             <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Catalogo\ufrmBancos.pas">
+            <Form>frmBancos</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Catalogo\ufrmCalendario.pas">
+            <Form>frmCalendario</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Catalogo\ufrmCOMERCIALES.pas">
+            <Form>frmCOMERCIALES</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Catalogo\ufrmFamilias.pas">
+            <Form>frmFamilias</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Catalogo\ufrmFormas_Pago.pas">
+            <Form>frmFormas_Pago</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Catalogo\ufrmPaises.pas">
+            <Form>frmPaises</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Catalogo\ufrmProvincias.pas">
+            <Form>frmProvincias</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Operacion\ufrmGastos.pas">
+            <Form>frmGastos</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Operacion\ufrmGrupos.pas">
+            <Form>frmGrupos</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Operacion\ufrmIngresos_Programados.pas">
+            <Form>frmIngresos_Programados</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="OperacionDatos\udmIngresos_Programados.pas">
+            <Form>dmIngresos_Programados</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="OperacionDatos\udmGrupos.pas">
+            <Form>dmGrupos</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="OperacionDatos\udmGastos.pas">
+            <Form>dmGastos</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="CatalogoDatos\udmBancos.pas">
+            <Form>dmBancos</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="CatalogoDatos\udmCalendario.pas">
+            <Form>dmCalendario</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="CatalogoDatos\udmCOMERCIALES.pas">
+            <Form>dmCOMERCIALES</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="CatalogoDatos\udmFamilias.pas">
+            <Form>dmFamilias</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="CatalogoDatos\udmFormas_Pago.pas">
+            <Form>dmFormas_Pago</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="CatalogoDatos\udmPaises.pas">
+            <Form>dmPaises</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="CatalogoDatos\udmProvincias.pas">
+            <Form>dmProvincias</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="Catalogo\ufrmClientes.pas">
+            <Form>frmClientes</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="CatalogoDatos\udmClientes.pas">
+            <Form>dmClientes</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="CatalogoDatos\udmUsuarios.pas">
+            <Form>dmUSUARIOS</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="Catalogo\ufrmUsuarios.pas">
+            <Form>frmUSUARIOS</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="OperacionDatos\udmALBARANES.pas">
+            <Form>dmALBARANES</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="Operacion\ufrmALBARANES.pas">
+            <Form>frmALBARANES</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="OperacionDatos\udmALBARANES_COMPRA.pas">
+            <Form>dmALBARANES_COMPRA</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="Operacion\ufrmALBARANES_COMPRA.pas">
+            <Form>frmALBARANES_COMPRA</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="OperacionDatos\udmPEDIDOS_COMPRA.pas">
+            <Form>dmPEDIDOS_COMPRA</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="Operacion\ufrmPEDIDOS_COMPRA.pas">
+            <Form>frmPEDIDOS_COMPRA</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="OperacionDatos\udmPresupuestos.pas">
+            <Form>dmPRESUPUESTOS</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="Operacion\ufrmPresupuestos.pas">
+            <Form>frmPRESUPUESTOS</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="OperacionDatos\udmINGRESOS.pas">
+            <Form>dmINGRESOS</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="Operacion\ufrmINGRESOS.pas">
+            <Form>frmINGRESOS</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Catalogo\ufrmProductos.pas">
+            <Form>frmproductos</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="CatalogoDatos\udmProductos.pas">
+            <Form>dmproductos</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TDataModule</DesignClass>
         </DCCReference>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
@@ -153,6 +317,10 @@
                 <Source>
                     <Source Name="MainSource">SGestion.dpr</Source>
                 </Source>
+                <Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dcloffice2k240.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dclofficexp240.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
+                </Excluded_Packages>
             </Delphi.Personality>
             <Deployment Version="3">
                 <DeployFile LocalName="Win32\Debug\SGestion.exe" Configuration="Debug" Class="ProjectOutput">

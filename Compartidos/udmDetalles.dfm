@@ -5,7 +5,7 @@ inherited dmDetalles: TdmDetalles
     Left = 72
     Top = 152
   end
-  object cdsDetalles: TRpClientDataset
+  object cdsDetalles: TClientDataSet
     Aggregates = <>
     Params = <>
     Left = 72

@@ -1,24 +1,9 @@
 inherited frmOperacion: TfrmOperacion
   Caption = 'frmOperacion'
-  OnCreate = nil
-  OnDestroy = nil
   PixelsPerInch = 96
   TextHeight = 13
   inherited pgcCatalogo: TPageControl
-    inherited tsListado: TTabSheet
-      ExplicitLeft = 4
-      ExplicitTop = 24
-      ExplicitWidth = 521
-      ExplicitHeight = 353
-      inherited grdCatalogo: TDBGrid
-        OnDblClick = nil
-      end
-    end
     inherited tsEditor: TTabSheet
-      ExplicitLeft = 4
-      ExplicitTop = 24
-      ExplicitWidth = 521
-      ExplicitHeight = 353
       object pnlDetalles: TPanel
         Left = 0
         Top = 40
@@ -55,14 +40,9 @@ inherited frmOperacion: TfrmOperacion
       end
     end
   end
-  inherited actCatalogo: TActionList
-    inherited actInforme: TAction
-      OnExecute = nil
-    end
-  end
   inherited imgImagenes: TImageList
     Bitmap = {
-      494C010105000800200120002000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
+      494C010105000800180120002000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000800000004000000001002000000000000080
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000060606074343
@@ -1127,7 +1107,7 @@ inherited frmOperacion: TfrmOperacion
   end
   inherited imgImagenesGris: TImageList
     Bitmap = {
-      494C0101050008003C0120002000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
+      494C010105000800340120002000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000800000004000000001002000000000000080
       0000000000000000000000000000000000000000000000000000000000000000
       00000000000000000000000000000000000001010101020202037C7C7C889090

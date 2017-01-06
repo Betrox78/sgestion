@@ -76,9 +76,180 @@ object frmMain: TfrmMain
       Category = 'Catalogos'
       Caption = 'Proveedores'
     end
-    object actPRODUCTOS: TAction
+    object actTiketVenta: TAction
       Category = 'Operaciones'
-      Caption = 'PRODUCTOS'
+      Caption = 'actTiketVenta'
+    end
+    object Action1: TAction
+      Caption = 'Action1'
+    end
+    object actBancos: TAction
+      Caption = 'Action2'
+    end
+    object actCalendario: TAction
+      Caption = 'Calendario'
+    end
+    object Action2: TAction
+      Caption = 'Action2'
+    end
+    object Action3: TAction
+      Caption = 'Action3'
+    end
+    object Action4: TAction
+      Caption = 'Action4'
+    end
+    object Action5: TAction
+      Caption = 'Action5'
+    end
+    object act1: TAction
+      Caption = 'Clientes'
+    end
+    object act2: TAction
+      Caption = 'Action6'
+    end
+    object act3: TAction
+      Caption = 'Action6'
+    end
+    object actClientes: TAction
+      Caption = 'Clientes'
+    end
+    object Action6: TAction
+      Caption = 'Action6'
+    end
+    object act4: TAction
+      Caption = 'Action7'
+    end
+    object actCOMERCIALES: TAction
+      Caption = 'Comerciales'
+    end
+    object act5: TAction
+      Caption = 'Action7'
+    end
+    object actFamilias: TAction
+      Caption = 'Familias'
+    end
+    object act6: TAction
+      Caption = 'Action7'
+    end
+    object act7: TAction
+      Caption = 'Action7'
+    end
+    object actFormas_Pago: TAction
+      Caption = 'Formas Pago'
+    end
+    object actPaises: TAction
+      Caption = 'Paises'
+    end
+    object act8: TAction
+      Caption = 'Action7'
+    end
+    object actProvincias: TAction
+      Caption = 'Provincias'
+    end
+    object act9: TAction
+      Caption = 'Action7'
+    end
+    object actUsuarios: TAction
+      Caption = 'Usuarios'
+    end
+    object act10: TAction
+      Caption = 'Action7'
+    end
+    object actTPV: TAction
+      Caption = 'Tiket Venta'
+    end
+    object act11: TAction
+      Caption = 'Action7'
+    end
+    object actGastos: TAction
+      Caption = 'Gastos'
+    end
+    object act12: TAction
+      Caption = 'Action7'
+    end
+    object actGrupos: TAction
+      Caption = 'Grupos'
+    end
+    object act13: TAction
+      Caption = 'Action7'
+    end
+    object actIngreso_Programados: TAction
+      Caption = 'Ingresos progrmados'
+    end
+    object act14: TAction
+      Caption = 'Action7'
+    end
+    object actPresupuestos: TAction
+      Caption = 'Presupuestos'
+    end
+    object act15: TAction
+      Caption = 'Action7'
+    end
+    object actPRODUCTOS: TAction
+      Caption = 'Productos'
+    end
+    object act16: TAction
+      Caption = 'Action7'
+    end
+    object actALBARANES: TAction
+      Caption = 'Albar'#225'nes Ventas'
+    end
+    object act17: TAction
+      Caption = 'Action7'
+    end
+    object actALBARANES_COMPRA: TAction
+      Caption = 'Albar'#225'nes Compra'
+    end
+    object act18: TAction
+      Caption = 'Action7'
+    end
+    object Action7: TAction
+      Caption = 'Action7'
+    end
+    object act19: TAction
+      Caption = 'Action8'
+    end
+    object Action8: TAction
+      Caption = 'Action8'
+    end
+    object actPEDIDOS_COMPRA: TAction
+      Caption = 'Pedidos Compra'
+    end
+    object act20: TAction
+      Caption = 'Action9'
+    end
+    object actAla: TAction
+      Caption = 'Action9'
+    end
+    object Action9: TAction
+      Caption = 'Action9'
+    end
+    object Action10: TAction
+      Caption = 'Action10'
+    end
+    object act21: TAction
+      Caption = 'Action11'
+    end
+    object actINGRESOS: TAction
+      Caption = 'Action11'
+    end
+    object act22: TAction
+      Caption = 'Action11'
+    end
+    object actIngresos_Programados: TAction
+      Caption = 'Facturas Automaticas'
+    end
+    object act23: TAction
+      Caption = 'Action11'
+    end
+    object Action11: TAction
+      Caption = 'Action11'
+    end
+    object act24: TAction
+      Caption = 'Action12'
+    end
+    object Action12: TAction
+      Caption = 'Action12'
     end
   end
   object mnuCatalogos: TPopupMenu
@@ -87,6 +258,37 @@ object frmMain: TfrmMain
     Top = 264
     object actProveedores1: TMenuItem
       Action = actProveedores
+    end
+    object Action21: TMenuItem
+      Action = actBancos
+      Caption = 'Bancos'
+    end
+    object mniCalendario: TMenuItem
+      Action = actCalendario
+    end
+    object mniClientes: TMenuItem
+      Action = actClientes
+    end
+    object mniactCnPrefixWizard: TMenuItem
+      Action = actCOMERCIALES
+    end
+    object mniactCnPrefixWizard1: TMenuItem
+      Action = actFamilias
+    end
+    object mniactCnPrefixWizard2: TMenuItem
+      Action = actFormas_Pago
+    end
+    object mniactCnPrefixWizard3: TMenuItem
+      Action = actPaises
+    end
+    object mniactCnPrefixWizard4: TMenuItem
+      Action = actProvincias
+    end
+    object mniactCnPrefixWizard5: TMenuItem
+      Action = actUsuarios
+    end
+    object mniactCnPrefixWizard9: TMenuItem
+      Action = actPRODUCTOS
     end
   end
   object imgMain: TImageList
@@ -97,7 +299,7 @@ object frmMain: TfrmMain
     Left = 240
     Top = 152
     Bitmap = {
-      494C0101010008008C0020002000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
+      494C010101000800980020002000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000800000002000000001002000000000000040
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
@@ -635,8 +837,33 @@ object frmMain: TfrmMain
   object mnuOperaciones: TPopupMenu
     Left = 240
     Top = 320
-    object actPRODUCTOS1: TMenuItem
-      Action = actPRODUCTOS
+    object mniactCnPrefixWizard6: TMenuItem
+      Action = actTPV
+    end
+    object mniactCnPrefixWizard7: TMenuItem
+      Action = actGastos
+    end
+    object mniactCnPrefixWizard8: TMenuItem
+      Action = actGrupos
+    end
+    object mniactCnPrefixWizard10: TMenuItem
+      Action = actPresupuestos
+    end
+    object mniactCnPrefixWizard12: TMenuItem
+      Action = actPEDIDOS_COMPRA
+    end
+    object mniALBARANES: TMenuItem
+      Action = actALBARANES
+    end
+    object mniALBARANES_COMPRA: TMenuItem
+      Action = actALBARANES_COMPRA
+    end
+    object mniactCnPrefixWizard13: TMenuItem
+      Action = actINGRESOS
+      Caption = 'Factura de Venta'
+    end
+    object mniactCnPrefixWizard11: TMenuItem
+      Action = actIngresos_Programados
     end
   end
 end

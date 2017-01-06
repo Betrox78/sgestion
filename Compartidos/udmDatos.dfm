@@ -13,7 +13,7 @@ object dmDatos: TdmDatos
     Left = 16
     Top = 56
   end
-  object cdsDatos: TRpClientDataset
+  object cdsDatos: TClientDataSet
     Aggregates = <>
     Params = <>
     ProviderName = 'dspDatos'

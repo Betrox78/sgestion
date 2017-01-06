@@ -64,10 +64,6 @@ object frmCatalogo: TfrmCatalogo
     TabOrder = 1
     object tsListado: TTabSheet
       Caption = 'Listado'
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object grdCatalogo: TDBGrid
         Left = 0
         Top = 0
@@ -87,10 +83,6 @@ object frmCatalogo: TfrmCatalogo
     object tsEditor: TTabSheet
       Caption = 'Datos Generales'
       ImageIndex = 1
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
     end
   end
   object actCatalogo: TActionList

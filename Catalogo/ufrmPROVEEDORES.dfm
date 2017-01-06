@@ -31,78 +31,91 @@ inherited frmPROVEEDORES: TfrmPROVEEDORES
             Expanded = False
             FieldName = 'NOMBRE'
             Title.Caption = 'Nombre'
+            Width = 64
             Visible = True
           end
           item
             Expanded = False
             FieldName = 'DIRECCION'
             Title.Caption = 'Direcci'#243'n'
+            Width = 64
             Visible = True
           end
           item
             Expanded = False
             FieldName = 'CODIGO_POSTAL'
             Title.Caption = 'C'#243'digo postal'
+            Width = 64
             Visible = True
           end
           item
             Expanded = False
             FieldName = 'CIUDAD'
             Title.Caption = 'Ciudad'
+            Width = 64
             Visible = True
           end
           item
             Expanded = False
             FieldName = 'PROVINCIA'
             Title.Caption = 'Provincia'
+            Width = 64
             Visible = True
           end
           item
             Expanded = False
             FieldName = 'NIF'
             Title.Caption = 'Nif'
+            Width = 64
             Visible = True
           end
           item
             Expanded = False
             FieldName = 'TELEFONO'
             Title.Caption = 'Tel'#233'fono'
+            Width = 64
             Visible = True
           end
           item
             Expanded = False
             FieldName = 'MOVIL'
             Title.Caption = 'Movil'
+            Width = 64
             Visible = True
           end
           item
             Expanded = False
             FieldName = 'FAX'
             Title.Caption = 'Fax'
+            Width = 64
             Visible = True
           end
           item
             Expanded = False
             FieldName = 'EMAIL'
             Title.Caption = 'Email'
+            Width = 64
             Visible = True
           end
           item
             Expanded = False
             FieldName = 'WEB'
             Title.Caption = 'Web'
+            Width = 64
             Visible = True
           end
           item
             Expanded = False
             FieldName = 'NUMERO_CUENTA'
             Title.Caption = 'Numero cuenta'
+            Width = 64
             Visible = True
           end
           item
             Expanded = False
             FieldName = 'OBSERVACIONES'
             Title.Caption = 'Observaciones'
+            Width = 64
             Visible = True
           end
           item
@@ -127,24 +140,28 @@ inherited frmPROVEEDORES: TfrmPROVEEDORES
             Expanded = False
             FieldName = 'CONTACTO'
             Title.Caption = 'Contacto'
+            Width = 64
             Visible = True
           end
           item
             Expanded = False
             FieldName = 'ID_FORMAS_PAGO'
             Title.Caption = 'Formas pago'
+            Width = 64
             Visible = True
           end
           item
             Expanded = False
             FieldName = 'ENTIDAD'
             Title.Caption = 'Entidad'
+            Width = 64
             Visible = True
           end
           item
             Expanded = False
             FieldName = 'PAIS'
             Title.Caption = 'Pais'
+            Width = 64
             Visible = True
           end
           item
@@ -157,12 +174,14 @@ inherited frmPROVEEDORES: TfrmPROVEEDORES
             Expanded = False
             FieldName = 'BIC'
             Title.Caption = 'Bic'
+            Width = 64
             Visible = True
           end
           item
             Expanded = False
             FieldName = 'ID_USUARIO'
             Title.Caption = 'Codigo usuario'
+            Width = 64
             Visible = True
           end>
       end
@@ -490,7 +509,7 @@ inherited frmPROVEEDORES: TfrmPROVEEDORES
     Left = 8
     Top = 344
     Bitmap = {
-      494C010105000800300120002000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
+      494C010105000800340120002000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000800000004000000001002000000000000080
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000060606074343
@@ -1557,7 +1576,7 @@ inherited frmPROVEEDORES: TfrmPROVEEDORES
     Left = 56
     Top = 344
     Bitmap = {
-      494C0101050008004C0120002000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
+      494C010105000800500120002000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000800000004000000001002000000000000080
       0000000000000000000000000000000000000000000000000000000000000000
       00000000000000000000000000000000000001010101020202037C7C7C889090
